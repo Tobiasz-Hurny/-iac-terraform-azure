@@ -1,7 +1,7 @@
-variable "name_resource_group" {
-  description = "name_resource_group"
+variable "recource-group" {
+  description = "recource-group"
   type = string
-  default = "example-resources"
+  default = "example-group-resources"
   
 }
 
@@ -11,8 +11,8 @@ variable "location_resource_group" {
   default = "West Europe"
   
 }
-variable "name_azurerm_storage_account" {
-  description = "name_azurerm_storage_account"
+variable "azurerm_storage_account" {
+  description = "azurerm_storage_account"
   type = string
   default = "linuxfunctionappsa"
   
@@ -32,8 +32,8 @@ variable "account_replication_type_azurerm_storage_account" {
   
 }
 
-variable "name_azurerm_service_plan" {
-  description = "name_azurerm_service_plan"
+variable "azurerm_service_plan" {
+  description = "azurerm_service_plan"
   type = string
   default = "example-app-service-plan"
   
@@ -63,6 +63,6 @@ variable "name_azurerm_linux_function_app" {
 variable "id_azurerm_function_app_function" {
   description = "sku_name_azurerm_service_plan"
   type = string
-  default = "1234567"
+  default = "01234"
   
 }
