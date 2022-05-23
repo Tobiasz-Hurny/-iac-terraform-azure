@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "this" {
-  name     = var.name_resource_group
+  name     = var.recource-group
   location = var.location_resource_group
 }
 
 resource "azurerm_storage_account" "this" {
-  name                     = var.name_azurerm_storage_account
+  name                     = var.azurerm_storage_account
   resource_group_name      = azurerm_resource_group.this.name
   location                 = azurerm_resource_group.this.location
   account_tier             = var.account_tier_azurerm_storage_account
@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "this" {
 }
 
 resource "azurerm_service_plan" "this" {
-  name                = var.name_azurerm_service_plan
+  name                = var.azurerm_service_plan
   resource_group_name = azurerm_resource_group.this.name
   location            = azurerm_resource_group.this.location
   sku_name            = var.sku_name_azurerm_service_plan
