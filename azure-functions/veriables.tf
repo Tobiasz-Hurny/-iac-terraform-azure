@@ -53,8 +53,8 @@ variable "sku_azurerm_service_plan" {
   
 }
 
-variable "name_azurerm_linux_function_app" {
-  description = "sku_name_azurerm_service_plan"
+variable "sku_azurerm_linux_function_app" {
+  description = "sku_azurerm_service_plan"
   type = string
   default = "example-linux-function-app"
   
