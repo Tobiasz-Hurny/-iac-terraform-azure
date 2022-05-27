@@ -26,8 +26,8 @@ variable "azurerm_resource_group" {
   default =  "LRS"
   }
 
-  variable "name_azurerm_storage_container" {
-  description = "name_azurerm_storage_container"
+  variable "azurerm_storage_container" {
+  description = "azurerm_storage_container"
   type = string
   default = "content"
   }
@@ -41,13 +41,13 @@ variable "azurerm_resource_group" {
   variable "url_azurerm_storage_blob" {
   description = "url_azurerm_storage_blob"
   type = string
-  default = "www.niewiem.pl"
+  default = "www.przykład.pl"
   }
 
-  variable "name_azurerm_storage_blob" {
-  description = "name_azurerm_storage_blob"
+  variable "azurerm_storage_blob" {
+  description = "azurerm_storage_blob"
   type = string
-  default = "my-awesome-content.zip"
+  default = "my_storage.zip"
   }
 
   variable "type_azurerm_storage_blob" {
@@ -59,5 +59,5 @@ variable "azurerm_resource_group" {
   variable "source_azurerm_storage_blob" {
   description = "source_azurerm_storage_blob"
   type = string
-  default = "some-local-file.zip"
+  default = "file.zip"
   }
