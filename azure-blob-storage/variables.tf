@@ -11,7 +11,7 @@ variable "azurerm_resource_group" {
   variable "azurerm_storage_account" {
   description = "azurerm_storage_account"
   type = string
-  default =  "examplestoracc"
+  default =  "examplestoreaccount"
   }
 
   variable "tier_azurerm_storage_account" {
