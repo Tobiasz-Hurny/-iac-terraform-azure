@@ -14,7 +14,7 @@ variable "location_resource_group" {
 variable "azurerm_storage_account" {
   description = "azurerm_storage_account"
   type = string
-  default = "linuxfunctionappsa"
+  default = "linuxfunctionalaccount"
   
 }
 
@@ -46,10 +46,10 @@ variable "os_type_azurerm_service_plan" {
   
 }
 
-variable "sku_name_azurerm_service_plan" {
-  description = "sku_name_azurerm_service_plan"
+variable "sku_azurerm_service_plan" {
+  description = "sku_azurerm_service_plan"
   type = string
-  default = "Y1"
+  default = "T1"
   
 }
 
@@ -63,6 +63,6 @@ variable "name_azurerm_linux_function_app" {
 variable "id_azurerm_function_app_function" {
   description = "sku_name_azurerm_service_plan"
   type = string
-  default = "01234"
+  default = "666"
   
 }
